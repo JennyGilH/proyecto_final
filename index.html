@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes - Viajes JG</title>
+    
+    <!-- Integración de Bootstrap 5 vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .hero-section {
+            background-color: #081C2C;
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #081C2C;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+    <!-- Se añade el logo con una altura de 50px para que encaje bien en el menú -->
+    <img src="logo.jpeg" alt="Logo Viajes JG" height="50">
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="container mt-4">
+        
+        <!-- Primera información -->
+        <div class="hero-section text-center mb-5 shadow">
+            <h1 class="display-5 fw-bold">Explora nuevos destinos</h1>
+            <p class="lead">Encuentra tu próxima aventura con nuestros paquetes exclusivos.</p>
+            <a href="#catalogo" class="btn btn-lg fw-bold text-dark mt-3" style="background-color: #1CB5D8; border-color: #1CB5D8;">Ver paquetes</a>
+        </div>
+
+        <!-- Sección del Catálogo -->
+        <h2 id="catalogo" class="mb-4 text-center fw-bold">Nuestros Destinos</h2>
+        <div class="row g-4 mb-5">
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="cartagena.jpg" class="card-img-top" alt="Cartagena">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Cartagena de Indias, Colombia</h5>
+                        <p class="card-text text-muted mb-4">Descubre Cartagena de Indias, una joya colonial Patrimonio de la Humanidad donde calles empedradas, balcones floridos y murallas históricas se funden con el vibrante sabor caribeño.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$1.200.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="machu_pichu.jpg" class="card-img-top" alt="Machu Picchu">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Machu Picchu, Perú</h5>
+                        <p class="card-text text-muted mb-4">Descubre Machu Picchu, una maravilla ancestral escondida entre las nubes de los Andes peruanos donde templos de piedra, terrazas milenarias y paisajes imponentes revelan el legado del Imperio Inca.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$3.500.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="cancun.jpg" class="card-img-top" alt="Cancún">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Cancún, México</h5>
+                        <p class="card-text text-muted mb-4">Descubre Cancún, un paraíso en el Caribe mexicano donde playas de arena blanca, aguas turquesas y arrecifes de coral se combinan con la mística herencia de la cultura maya y una vibrante vida nocturna.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$4.200.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="Punta_Cana.jpg" class="card-img-top" alt="Punta Cana">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Punta Cana, R. Dominicana</h5>
+                        <p class="card-text text-muted mb-4">Descubre Punta Cana, el destino estrella de República Dominicana donde kilómetros de playas de arena blanca, palmeras infinitas y aguas turquesas crean el refugio perfecto para el descanso y la aventura bajo el sol del Caribe.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$4.800.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="paris.jpg" class="card-img-top" alt="París">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">París, Francia</h5>
+                        <p class="card-text text-muted mb-4">Descubre París, la icónica Ciudad de la Luz donde monumentos legendarios como la Torre Eiffel, avenidas elegantes y museos de talla mundial se mezclan con el encanto romántico de sus cafés, su gastronomía y las orillas del río Sena.
+                            .</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$8.500.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="roma.jpg" class="card-img-top" alt="Roma">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Roma, Italia</h5>
+                        <p class="card-text text-muted mb-4">Descubre Roma, la legendaria Ciudad Eterna donde ruinas milenarias como el Coliseo, plazas monumentales y tesoros del Renacimiento se funden con el encanto de sus callejones empedrados, sus fuentes y la auténtica gastronomía italiana.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$8.200.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="Tokio.jpg" class="card-img-top" alt="Tokio">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Tokio, Japón</h5>
+                        <p class="card-text text-muted mb-4">Descubre Tokio, una metrópoli fascinante donde templos ancestrales y jardines serenos conviven en perfecta armonía con rascacielos futuristas, luces de neón, gastronomía de clase mundial y una cultura pop vibrante.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$12.000.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="new_york.jpg" class="card-img-top" alt="Nueva York">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nueva York, EEUU</h5>
+                        <p class="card-text text-muted mb-4">Descubre Nueva York, la vibrante ciudad que nunca duerme donde rascacielos icónicos, el verde respiro de Central Park y las luces de Times Square se combinan con una escena cultural, artística y gastronómica inigualable.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold fs-5 text-primary mb-2">$7.500.000 COP</p>
+                            <a href="#reservas" class="btn btn-outline-primary w-100 btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Reserva Simulada dividida en 2 columnas (Formulario y Lista) -->
+        <h2 id="reservas" class="mb-4 text-center fw-bold">Reserva tu Paquete</h2>
+        <div class="row mb-5">
+            <!-- Formulario -->
+            <div class="col-md-6">
+                <form id="reserva-form" class="p-4 border border-1 rounded-3 shadow-sm bg-white h-100">
+                    <div class="mb-3">
+                        <label for="destino" class="form-label fw-bold">1. Selecciona tu paquete turístico</label>
+                        <select class="form-select form-select-lg" id="destino" required>
+                            <option value="" selected disabled>Elige un destino...</option>
+                            <option value="1200000">San Andrés - $1.200.000 COP</option>
+                            <option value="3500000">Machu Picchu - $3.500.000 COP</option>
+                            <option value="4200000">Cancún - $4.200.000 COP</option>
+                            <option value="4800000">Punta Cana - $4.800.000 COP</option>
+                            <option value="8500000">París - $8.500.000 COP</option>
+                            <option value="8200000">Roma - $8.200.000 COP</option>
+                            <option value="12000000">Tokio - $12.000.000 COP</option>
+                            <option value="7500000">Nueva York - $7.500.000 COP</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="personas" class="form-label fw-bold">2. Número de viajeros</label>
+                        <input type="number" class="form-control form-control-lg" id="personas" min="1" value="1" required>
+                    </div>
+                    
+                    <!-- El botón tiene su id para que JS lo escuche -->
+                    <button type="button" class="btn btn-success btn-lg w-100 fw-bold" id="registrar">Registrar Reserva</button>
+                </form>
+            </div>
+
+            <!-- Lista donde aparecerán las reservas generadas -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="p-4 border border-1 rounded-3 shadow-sm bg-white h-100">
+                    <h4 class="fw-bold mb-3 text-center">Historial de Reservas</h4>
+                    <ul id="lista" class="list-group">
+                        <!-- Las reservas se inyectarán aquí desde JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Contacto -->
+        <h2 id="contacto" class="mb-4 text-center fw-bold">Contáctanos</h2>
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-6 text-center">
+                <p class="text-muted">Si tienes dudas sobre tu viaje, escríbenos. Estaremos felices de ayudarte.</p>
+                <a href="mailto:contacto@viajesjg.com" class="btn btn-dark">Enviar un correo electrónico</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2026 viajes JG Agencia de Viajes. Proyecto Académico.</p>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Lógica JavaScript para la reserva -->
+    <script src="app.js"></script>
+</body>
+</html>
